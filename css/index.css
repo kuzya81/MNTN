@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+ul, li, a{
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+/* font-family: 'Abhaya Libre', serif;
+font-family: 'Poppins', sans-serif; */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+    background: #0B1D26;
+}
+.wrapper{
+    max-width: 1920px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-image: url(../img/bg_img.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.hero-container{
+    max-width: 1760px;
+    margin: auto;
+    padding-bottom: 775px;
+}
+.container{
+    max-width: 1460px;
+    margin: auto;
+}
+.header{
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    margin-left: -100px;
+}
+.nav__list{
+    display: inline-flex;
+}
+.nav__list-link{
+    margin-right: 40px;
+    transition: all .5s;
+}
+.nav__list-link:hover{
+    color: #FBD784;
+}
+
+.login{
+    position: relative;
+}
+.login::before{
+    position: absolute;
+    content: url(../img/login.png);
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: -30px;
+}
+.hero__content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+    align-items: center;
+}
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.left__text{
+    display: inline-flex;
+    transform: rotate(90deg);
+    margin-bottom: 50px;
+}
+.left__link{
+    opacity: .5;
+    transition:all .5s;
+}
+.left__link:hover{
+    opacity: 1;
+}
+
+
+.hero__main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 950px;
+    padding-left: 40px;
+}
+.subtitle{
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.subtitle::before{
+    content: "";
+    display: block;
+    width: 72px;
+    height: 2px;
+    background: #FBD784;
+    top: 50%;
+    position: absolute;
+    left: -100px;
+}
+.top-subtitle{
+    margin-bottom: -25px;
+}
+
+.main__title{
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 100px;
+    font-family: 'Abhaya Libre', serif;
+    margin-bottom: 32px;
+}
+.main__scroll{
+    position: relative;
+}
+.main__scroll::after{
+    content: url(../img/arrow_downward_24px.png);
+    display: block;
+    width: 16px;
+    height: 24px;
+    top: 5px;
+    right: -40px;
+    position: absolute;
+}
+.right__list-item{
+    display: flex;
+    align-items: center;
+    width: 72px;
+    text-align: left;
+    height: 60px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all .5s;
+}
+.right__list-item:hover{
+    border-right: 2px solid #fff;
+}
+.main__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0;
+    margin-bottom: 200px;
+}
+.content__num{
+    font-size: 240px;
+    line-height: 240px;
+    opacity: .4;
+}
+.content__text-block{
+    max-width: 590px;
+    display: flex;
+    flex-direction: column;
+    margin: -126px 0 0 130px;
+}
+.content__title{
+    font-size: 64px;
+    line-height: 77px;
+    font-family: 'Abhaya Libre', serif;
+}
+.content__link{
+    color: #FBD784;
+}
+.content__link:hover{
+    color: #FBD784;
+    text-decoration: underline;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-size: 14;
+}
+.footer__left{
+    max-width: 390px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer__left-copy{
+    margin-top: auto;
+    opacity: .5;
+}
+.footer__right{
+    display: flex;
+    column-count: 2;
+    margin-left: auto;
+}
+.footer__menu{
+    margin-left: 212px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__logo, .menu__title{
+    margin-bottom: 20px;
+}
+.menu__title{
+    color: #FBD784;
+}
